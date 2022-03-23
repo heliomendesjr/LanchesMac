@@ -25,7 +25,7 @@ namespace LanchesMac
             services.AddTransient<ILancheRepository, LancheRepository>();
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
+            services.AddScoped(sp=> CarrinhoCompra.GetCarrinho(sp));
 
             services.AddControllersWithViews();
 

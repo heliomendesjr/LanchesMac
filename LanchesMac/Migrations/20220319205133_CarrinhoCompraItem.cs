@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using LanchesMac.Models;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -38,6 +39,11 @@ namespace LanchesMac.Migrations
         {
             migrationBuilder.DropTable(
                 name: "CarrinhoCompraItem");
+        }
+
+        public static implicit operator CarrinhoCompraItem(CarrinhoCompra v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
